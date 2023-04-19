@@ -86,7 +86,7 @@ def summarize_text(
 
         memory_to_add = f"Source: {url}\n" f"Content summary part#{i + 1}: {summary}"
 
-        MEMORY.add(memory_to_add)
+        # MEMORY.add(memory_to_add)
 
     print(f"Summarized {len(chunks)} chunks.")
 
