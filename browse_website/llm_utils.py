@@ -7,8 +7,8 @@ import openai
 from colorama import Fore, Style
 from openai.error import APIError, RateLimitError
 
-from config import Config
-from logs import logger
+from browse_website.config import Config
+from browse_website.logs import logger
 
 CFG = Config()
 

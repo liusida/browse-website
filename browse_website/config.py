@@ -6,7 +6,7 @@ import yaml
 from colorama import Fore
 # from dotenv import load_dotenv
 
-from singleton import Singleton
+from browse_website.singleton import Singleton
 
 # load_dotenv(verbose=True)
 

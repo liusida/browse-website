@@ -3,9 +3,9 @@ from typing import Dict, Generator, Optional
 
 from selenium.webdriver.remote.webdriver import WebDriver
 
-from config import Config
-from llm_utils import create_chat_completion
-from memory import get_memory
+from browse_website.config import Config
+from browse_website.llm_utils import create_chat_completion
+from browse_website.memory import get_memory
 
 CFG = Config()
 MEMORY = get_memory(CFG)
@@ -72,7 +72,7 @@ def summarize_text(
 
         memory_to_add = f"Source: {url}\n" f"Raw content part#{i + 1}: {chunk}"
 
-        MEMORY.add(memory_to_add)
+        # MEMORY.add(memory_to_add)
 
         print(f"Summarizing chunk {i + 1} / {len(chunks)}")
         messages = [create_message(chunk, question)]

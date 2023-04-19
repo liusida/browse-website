@@ -17,9 +17,9 @@ from selenium.webdriver.support.wait import WebDriverWait
 from webdriver_manager.chrome import ChromeDriverManager
 from webdriver_manager.firefox import GeckoDriverManager
 
-import text as summary
-from config import Config
-from html import extract_hyperlinks, format_hyperlinks
+import browse_website.text as summary
+from browse_website.config import Config
+from browse_website.html import extract_hyperlinks, format_hyperlinks
 
 FILE_DIR = Path(__file__).parent.parent
 CFG = Config()
