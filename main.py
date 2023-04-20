@@ -2,7 +2,7 @@ from browse_website.browse_website import scrape_with_selenium
 
 # Example 1:
 # Get formatted HTML from https://liusida.github.io/
-text = scrape_with_selenium("https://liusida.github.io/", return_format="HTML")
+text = scrape_with_selenium("https://liusida.github.io/", return_format="HTML", selenium_headless=False)
 print(text[:100])
 print(len(text))
 
